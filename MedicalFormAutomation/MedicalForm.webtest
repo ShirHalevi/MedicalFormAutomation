@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="MedicalForm" Id="d8342af8-6a37-494b-ace8-26bb65f339fb" Owner="" Priority="0" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="885f5fd2-6c1d-48e8-9ff4-055f0d0e4f01" Version="1.1" Url="https://forms.office.com/Pages/ResponsePage.aspx" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="sec-ch-ua" Value="&quot;Google Chrome&quot;;v=&quot;87&quot;, &quot; Not;A Brand&quot;;v=&quot;99&quot;, &quot;Chromium&quot;;v=&quot;87&quot;" />
+        <Header Name="sec-ch-ua-mobile" Value="?0" />
+        <Header Name="Upgrade-Insecure-Requests" Value="1" />
+        <Header Name="Sec-Fetch-Site" Value="none" />
+        <Header Name="Sec-Fetch-Mode" Value="navigate" />
+        <Header Name="Sec-Fetch-Dest" Value="document" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="id" Value="{{DataSource1.UsersDataMedicalForm#csv.NavigationId}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="1753884a-8676-4bd3-aec2-48fad6f1df18" Version="1.1" Url="https://forms.office.com/formapi/api/079c9117-40f1-4d9e-8d4c-8f63c6b0855b/users/75f48dd3-0691-4fd7-a10c-7fe2da41e222/light/runtimeForms('F5GcB_FAnk2NTI9jxrCFW9ON9HWRBtdPoQx_4tpB4iJUQ1ZPUEpFOEpLUE5ZUlNDSzlFRFNDU1pHVi4u')" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="sec-ch-ua" Value="&quot;Google Chrome&quot;;v=&quot;87&quot;, &quot; Not;A Brand&quot;;v=&quot;99&quot;, &quot;Chromium&quot;;v=&quot;87&quot;" />
+        <Header Name="X-UserSessionId" Value="15a2ebc3-2ce1-4759-9632-0dea07028361" />
+        <Header Name="sec-ch-ua-mobile" Value="?0" />
+        <Header Name="__RequestVerificationToken" Value="9gMjqukCobXeVhyMLv-2tJ-VlhUdZdnxCdI-8p62-RkXzzq9Pjz0l65Ci7eTCCQ3GAq_bhK8UQYMKFVPzKIUiY3Dq7ZOwnC9Xifm5ZLP00A1" />
+        <Header Name="Content-Type" Value="application/json" />
+        <Header Name="Sec-Fetch-Site" Value="same-origin" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="$expand" Value="questions($expand=choices)" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="40dec932-00ae-4254-a88e-af0ed1e4c2ef" Version="1.1" Url="https://forms.office.com/Pages/ResponsePage.aspx/GetThemes" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="sec-ch-ua" Value="&quot;Google Chrome&quot;;v=&quot;87&quot;, &quot; Not;A Brand&quot;;v=&quot;99&quot;, &quot;Chromium&quot;;v=&quot;87&quot;" />
+        <Header Name="odata-version" Value="4.0" />
+        <Header Name="x-correlationid" Value="undefined" />
+        <Header Name="x-usersessionid" Value="15a2ebc3-2ce1-4759-9632-0dea07028361" />
+        <Header Name="x-ms-form-request-ring" Value="business" />
+        <Header Name="sec-ch-ua-mobile" Value="?0" />
+        <Header Name="content-type" Value="application/json" />
+        <Header Name="odata-maxverion" Value="4.0" />
+        <Header Name="__requestverificationtoken" Value="9gMjqukCobXeVhyMLv-2tJ-VlhUdZdnxCdI-8p62-RkXzzq9Pjz0l65Ci7eTCCQ3GAq_bhK8UQYMKFVPzKIUiY3Dq7ZOwnC9Xifm5ZLP00A1" />
+        <Header Name="shareinvitationkey" Value="undefined" />
+        <Header Name="x-ms-form-request-source" Value="ms-formweb" />
+        <Header Name="Origin" Value="https://forms.office.com" />
+        <Header Name="Sec-Fetch-Site" Value="same-origin" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">ewAiAG4AYQBtAGUAIgA6ACIATwBmAGYAaQBjAGUAIgB9AA==</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="eb75207a-e7a5-47b6-bfb6-ff3dcc58ae10" Version="1.1" Url="https://forms.office.com/formapi/api/079c9117-40f1-4d9e-8d4c-8f63c6b0855b/users/75f48dd3-0691-4fd7-a10c-7fe2da41e222/forms('F5GcB_FAnk2NTI9jxrCFW9ON9HWRBtdPoQx_4tpB4iJUQ1ZPUEpFOEpLUE5ZUlNDSzlFRFNDU1pHVi4u')/localeResource/'en-us'" ThinkTime="35" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="sec-ch-ua" Value="&quot;Google Chrome&quot;;v=&quot;87&quot;, &quot; Not;A Brand&quot;;v=&quot;99&quot;, &quot;Chromium&quot;;v=&quot;87&quot;" />
+        <Header Name="odata-version" Value="4.0" />
+        <Header Name="x-correlationid" Value="41ccd55a-93e3-4fdc-b5a4-b545861091f8" />
+        <Header Name="x-usersessionid" Value="15a2ebc3-2ce1-4759-9632-0dea07028361" />
+        <Header Name="x-ms-form-request-ring" Value="business" />
+        <Header Name="sec-ch-ua-mobile" Value="?0" />
+        <Header Name="content-type" Value="application/json" />
+        <Header Name="odata-maxverion" Value="4.0" />
+        <Header Name="__requestverificationtoken" Value="9gMjqukCobXeVhyMLv-2tJ-VlhUdZdnxCdI-8p62-RkXzzq9Pjz0l65Ci7eTCCQ3GAq_bhK8UQYMKFVPzKIUiY3Dq7ZOwnC9Xifm5ZLP00A1" />
+        <Header Name="shareinvitationkey" Value="undefined" />
+        <Header Name="x-ms-form-request-source" Value="ms-formweb" />
+        <Header Name="Sec-Fetch-Site" Value="same-origin" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+      </Headers>
+    </Request>
+    <Request Method="POST" Guid="4a87247a-365d-46f1-9aa7-d3c19c59da69" Version="1.1" Url="https://forms.office.com/formapi/api/079c9117-40f1-4d9e-8d4c-8f63c6b0855b/users/75f48dd3-0691-4fd7-a10c-7fe2da41e222/forms('F5GcB_FAnk2NTI9jxrCFW9ON9HWRBtdPoQx_4tpB4iJUQ1ZPUEpFOEpLUE5ZUlNDSzlFRFNDU1pHVi4u')/responses" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="sec-ch-ua" Value="&quot;Google Chrome&quot;;v=&quot;87&quot;, &quot; Not;A Brand&quot;;v=&quot;99&quot;, &quot;Chromium&quot;;v=&quot;87&quot;" />
+        <Header Name="odata-version" Value="4.0" />
+        <Header Name="x-correlationid" Value="bb58dfb7-4e77-49c4-8426-99ada8ea8cd2" />
+        <Header Name="x-usersessionid" Value="15a2ebc3-2ce1-4759-9632-0dea07028361" />
+        <Header Name="x-ms-form-request-ring" Value="business" />
+        <Header Name="sec-ch-ua-mobile" Value="?0" />
+        <Header Name="content-type" Value="application/json" />
+        <Header Name="odata-maxverion" Value="4.0" />
+        <Header Name="__requestverificationtoken" Value="9gMjqukCobXeVhyMLv-2tJ-VlhUdZdnxCdI-8p62-RkXzzq9Pjz0l65Ci7eTCCQ3GAq_bhK8UQYMKFVPzKIUiY3Dq7ZOwnC9Xifm5ZLP00A1" />
+        <Header Name="shareinvitationkey" Value="undefined" />
+        <Header Name="x-ms-form-request-source" Value="ms-formweb" />
+        <Header Name="Origin" Value="https://forms.office.com" />
+        <Header Name="Sec-Fetch-Site" Value="same-origin" />
+        <Header Name="Sec-Fetch-Mode" Value="cors" />
+        <Header Name="Sec-Fetch-Dest" Value="empty" />
+      </Headers>
+      <StringHttpBody ContentType="application/json" InsertByteOrderMark="False">ewAiAHMAdABhAHIAdABEAGEAdABlACIAOgAiAHsAewBTAHQAYQByAHQARABhAHQAZQB9AH0AIgAsACIAcwB1AGIAbQBpAHQARABhAHQAZQAiADoAIgB7AHsAUwB0AGEAcgB0AEQAYQB0AGUAfQB9ACIALAAiAGEAbgBzAHcAZQByAHMAIgA6ACIAWwB7AFwAIgBxAHUAZQBzAHQAaQBvAG4ASQBkAFwAIgA6AFwAIgByADYAMQAxADgAZQBhADMAYQBmADgANQBlADQAYQBiADIAYgBhADYAMABkAGUANgA1AGQAMQAxADkAYgA5AGUAMABcACIALABcACIAYQBuAHMAdwBlAHIAMQBcACIAOgBcACIAewB7AE4AYQBtAGUAQQBuAGQAUwBpAGcAbgB9AH0AXAAiAH0ALAB7AFwAIgBxAHUAZQBzAHQAaQBvAG4ASQBkAFwAIgA6AFwAIgByADYAYgBmADEANgA1AGQAZQAzAGEANwAzADQAYQA1ADQAYQA4ADcAMgBlAGEAMwAwAGUAYwA3ADMAYQA0ADgANgBcACIALABcACIAYQBuAHMAdwBlAHIAMQBcACIAOgBcACIAewB7AFAAYQBzAHMAcABvAHIAdAB9AH0AXAAiAH0ALAB7AFwAIgBxAHUAZQBzAHQAaQBvAG4ASQBkAFwAIgA6AFwAIgByAGYAZQA4ADkAMwA0AGMAZgAxAGYAYQA2ADQAZAA3ADMAYgBlAGQAZAA5ADkAMQAyADAAMABiADcAMAAyADMAYQBcACIALABcACIAYQBuAHMAdwBlAHIAMQBcACIAOgBcACIAMgAwADIAMAAtADEAMgAtADIAOQBcACIAfQAsAHsAXAAiAHEAdQBlAHMAdABpAG8AbgBJAGQAXAAiADoAXAAiAHIAMwAxAGQAZABhADkAZAAzADgAZQBkAGIANAAzAGQANgBhADMAYQA2ADkAOQA4AGQAYwAyADEAMAAwAGMAOAA3AFwAIgAsAFwAIgBhAG4AcwB3AGUAcgAxAFwAIgA6AFwAIgAwADcAOgAwADAAXAAiAH0ALAB7AFwAIgBxAHUAZQBzAHQAaQBvAG4ASQBkAFwAIgA6AFwAIgByAGIAYgAzAGUAYQA3AGQAZQBmAGEAZAA1ADQANQA3ADUAYQA0ADMANgA5ADUAMAA0AGMAZQA5ADIAMAAzADgAMABcACIALABcACIAYQBuAHMAdwBlAHIAMQBcACIAOgBcACIAewB7AFQAZQBtAHAAfQB9AFwAIgB9ACwAewBcACIAcQB1AGUAcwB0AGkAbwBuAEkAZABcACIAOgBcACIAcgBiADcAZABkAGYAZQBiADUAMAAyADEAZQA0ADkAZQBiAGEANQA1ADgAOQBiAGEANQAzADUANQBkADYANQA2ADIAXAAiACwAXAAiAGEAbgBzAHcAZQByADEAXAAiADoAXAAiAOAF2wXVBd8FXAAiAH0ALAB7AFwAIgBxAHUAZQBzAHQAaQBvAG4ASQBkAFwAIgA6AFwAIgByADQANgBjAGIAYwA5ADUAYgA1ADIANABmADQAYgA2ADQAOQBiADUAMgBiAGMANQBjADcAYwBhADIAMwA3ADUAZABcACIALABcACIAYQBuAHMAdwBlAHIAMQBcACIAOgBcACIA4AXbBdUF3wUgAFwAIgB9ACwAewBcACIAcQB1AGUAcwB0AGkAbwBuAEkAZABcACIAOgBcACIAcgAxAGMAMQBiADAAMgBmAGMAYgBiADcANwA0ADQANQA5AGEANgAwADQAMwAzADgAZQBmADEAYgBjAGMAOAA0AGUAXAAiACwAXAAiAGEAbgBzAHcAZQByADEAXAAiADoAXAAiAOAF2wXVBd8FIABcACIAfQAsAHsAXAAiAHEAdQBlAHMAdABpAG8AbgBJAGQAXAAiADoAXAAiAHIAOQA0ADgAMgBlAGEAYQBjADYAYgAwAGYANAA1ADUANgA4ADUAZgAwAGEAMABiADkANwA5ADUAMQA1AGYANwA0AFwAIgAsAFwAIgBhAG4AcwB3AGUAcgAxAFwAIgA6AFwAIgDgBdsF1QXfBVwAIgB9ACwAewBcACIAcQB1AGUAcwB0AGkAbwBuAEkAZABcACIAOgBcACIAcgA5ADUAMwBlADUAZgBjAGQAYQBhADgAMAA0ADgANQA2AGEAMQBjAGEAYgBkADUAMwA4AGIAMQBjADcAOQBiADMAXAAiACwAXAAiAGEAbgBzAHcAZQByADEAXAAiADoAXAAiAHsAewBOAGEAbQBlAEEAbgBkAFMAaQBnAG4AfQB9AFwAIgB9AF0AIgB9AA==</StringHttpBody>
+    </Request>
+  </Items>
+  <DataSources>
+    <DataSource Name="DataSource1" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\UsersDataMedicalForm.csv">
+      <Tables>
+        <DataSourceTable Name="UsersDataMedicalForm#csv" SelectColumns="SelectAllColumns" AccessMethod="Sequential" />
+      </Tables>
+    </DataSource>
+  </DataSources>
+  <ContextParameters>
+    <ContextParameter Name="StartDate" Value="" />
+  </ContextParameters>
+  <WebTestPlugins>
+    <WebTestPlugin Classname="MedicalFormAutomation.Plugins.InitDate, MedicalFormAutomation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DisplayName="InitDate" Description="">
+      <RuleParameters>
+        <RuleParameter Name="StartDate" Value="StartDate" />
+      </RuleParameters>
+    </WebTestPlugin>
+  </WebTestPlugins>
+</WebTest>
